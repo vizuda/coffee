@@ -158,8 +158,8 @@ header .navbar {
 }
 
 .hero-section .hero-image-wrapper {
-    max-width: 400px; /* Reduced image size */
-    margin-right: 200px;
+    max-width: 300px; /* Reduced image size */
+    margin-right: 300px;
 }
 
 /* ABOUT SECTION */
