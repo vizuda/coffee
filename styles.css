@@ -53,27 +53,29 @@ header .navbar {
 .navbar .nav-logo .logo-text {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px; /* Larger logo text */
 }
 
 .navbar h2 {
     font-weight: bolder;
+    font-size: 32px; /* Bigger icon text */
 }
 
 .navbar .nav-menu {
     display: flex;
     gap: 0;
     padding: 12px 48px;
-    font-size: 18px;
+    font-size: 20px; /* Bigger nav items */
 }
 
 .navbar .nav-menu .nav-link {
-    padding: 10px 18px;
+    padding: 12px 22px;
     background-color: #3b1413;
     border-radius: 2rem;
     color: white;
     text-decoration: none;
     display: flex;
+    font-size: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -88,7 +90,7 @@ header .navbar {
 /* HERO SECTION */
 .hero-section {
     max-height: 100vh;
-    background: linear-gradient(to right, #3b1413, #6b1d1b);
+    background-color: #3b1413;
     color: white;
 }
 
@@ -127,11 +129,11 @@ header .navbar {
 
 .hero-section .section-details .buttons .order-now,
 .hero-section .section-details .buttons .contact-us {
-    font-size: 20px;
-    padding: 14px 32px;
+    font-size: 18px;
+    padding: 12px 28px;
     border-radius: 40px;
-    width: 300px;
-    gap: 80px;
+    width: 220px; /* Smaller button width */
+    gap: 60px;
     margin: 20px;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -156,40 +158,46 @@ header .navbar {
 }
 
 .hero-section .hero-image-wrapper {
-    max-width: 600px;
-    margin-right: 300px;
+    max-width: 400px; /* Reduced image size */
+    margin-right: 200px;
 }
 
 /* ABOUT SECTION */
 .about-section {
-    padding: 160px 80px;
+    padding: 100px 40px;
     background-color: whitesmoke;
-    height: 100vh;
+    height: 80vh; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-section .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    gap: 40px;
+    text-align: center;
+}
+
+.about-section .about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .about-section .about-image-wrapper .about-image {
-    width: 100%;
-    height: 100%;
-    max-width: 250px;
-    aspect-ratio: 1;
-    object-fit: cover;
+    max-width: 200px;
+    height: auto;
     border-radius: var(--border-radius-c);
-    margin-left: 550px;
-    margin-right: 250px;
-    margin-bottom: 0;
+    object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
     text-align: center;
-    padding: 60px 0 100px;
+    padding: 20px 0 60px;
     text-transform: uppercase;
     font-size: 25px;
 }
@@ -206,9 +214,9 @@ header .navbar {
 
 .about-section .about-details .text {
     line-height: 30px;
-    margin: 50px 0 30px;
+    margin: 30px 0;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .about-section .about-details .section-title {
@@ -217,11 +225,6 @@ header .navbar {
 
 .about-section .about-details {
     padding: 18px;
-}
-
-.about-section .section-contain {
-    flex-direction: column-reverse;
-    gap: 70px;
 }
 
 /* CLASS (Unused?) */
